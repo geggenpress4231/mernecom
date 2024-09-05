@@ -22,7 +22,7 @@ app.get('/',(req,res)=>{
 app.use(express.json())             
 app.use(cookieParser())
 
-app.use('/user',require('./routes/userRoutes'))
+app.use('/user',require('./routes/userRouter'))
 
 mongoose.connect(URI, {
     useNewUrlParser: true,
